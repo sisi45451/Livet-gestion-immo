@@ -403,26 +403,26 @@ footer{background:#0a2035;padding:3.5rem 5%;display:grid;grid-template-columns:1
     <h2 class="s-title">Prêt à nous <em>confier votre bien</em> ?</h2>
     <p class="s-body">Laissez-nous vos coordonnées et nous vous recontactons sous <strong>24 heures</strong> pour une estimation personnalisée de loyer garanti.</p>
     <div class="ci-list">
-      <div class="ci"><div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.42 2 2 0 0 1 3.62 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg></div><div class="ci-txt"><strong>Téléphone</strong><span>Lundi–Vendredi · 9h–19h</span></div></div>
-      <div class="ci"><div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="ci-txt"><strong>Email</strong><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c08ca9b6a5b4a7a5b3b4a9afaea9adadaf80a7ada1a9aceea3afad">[email&#160;protected]</a></span></div></div>
+      <div class="ci"><div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.42 2 2 0 0 1 3.62 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg></div><div class="ci-txt"><strong>Téléphone</strong><span>Lundi–Vendredi · 9h–19h · 06 98 20 33 40</span></div></div>
+      <div class="ci"><div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="ci-txt"><strong>Email</strong><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1c4f757179733270756a79685c6a757d7f796f75327a6e">[email&#160;protected]</a></span></div></div>
       <div class="ci"><div class="ci-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg></div><div class="ci-txt"><strong>Zone d'intervention</strong><span>Région Côtes Ouest</span></div></div>
     </div>
   </div>
   <div class="rev-r">
-    <div class="cf">
+    <form class="cf" action="https://formspree.io/f/xbdzolzv" method="POST" id="contactForm">
       <div class="cf-title">Demande d'estimation gratuite</div>
       <div class="fg-row">
-        <div class="fg2"><label>Prénom</label><input type="text" placeholder="Jean"/></div>
-        <div class="fg2"><label>Nom</label><input type="text" placeholder="Dupont"/></div>
+        <div class="fg2"><label for="prenom">Prénom</label><input id="prenom" type="text" name="prenom" placeholder="Jean" required/></div>
+        <div class="fg2"><label for="nom">Nom</label><input id="nom" type="text" name="nom" placeholder="Dupont" required/></div>
       </div>
-      <div class="fg2"><label>Email</label><input type="email" placeholder="jean@example.com"/></div>
-      <div class="fg2"><label>Téléphone</label><input type="tel" placeholder="06 XX XX XX XX"/></div>
-      <div class="fg2"><label>Type de bien</label><select><option value="">Sélectionnez votre type de bien</option><option>Studio</option><option>Appartement T2</option><option>Appartement T3+</option><option>Maison</option><option>Autre</option></select></div>
-      <div class="fg2"><label>Ville du bien</label><input type="text" placeholder="Paris, Lyon, Bordeaux…"/></div>
-      <div class="fg2"><label>Message (optionnel)</label><textarea placeholder="Décrivez votre bien et vos attentes…"></textarea></div>
-      <button class="sub-btn" id="subBtn">Envoyer ma demande →</button>
+      <div class="fg2"><label for="email">Email</label><input id="email" type="email" name="email" placeholder="jean@example.com" required/></div>
+      <div class="fg2"><label for="telephone">Téléphone</label><input id="telephone" type="tel" name="telephone" placeholder="06 XX XX XX XX"/></div>
+      <div class="fg2"><label for="bien">Type de bien</label><select id="bien" name="type_de_bien"><option value="">Sélectionnez votre type de bien</option><option>Studio</option><option>Appartement T2</option><option>Appartement T3+</option><option>Maison</option><option>Autre</option></select></div>
+      <div class="fg2"><label for="ville">Ville du bien</label><input id="ville" type="text" name="ville" placeholder="Paris, Lyon, Bordeaux…"/></div>
+      <div class="fg2"><label for="message">Message (optionnel)</label><textarea id="message" name="message" placeholder="Décrivez votre bien et vos attentes…"></textarea></div>
+      <button class="sub-btn" type="submit" id="subBtn">Envoyer ma demande →</button>
       <div class="form-note">🔒 Données confidentielles — aucun partage tiers</div>
-    </div>
+    </form>
   </div>
 </section>
 
@@ -433,7 +433,7 @@ footer{background:#0a2035;padding:3.5rem 5%;display:grid;grid-template-columns:1
   <div class="fl-links"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#contact">Contact</a></div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // CURSOR
 const cur=document.getElementById('cur'),ring=document.getElementById('curRing');
 let mx=0,my=0,rx=0,ry=0;
@@ -472,11 +472,38 @@ new IntersectionObserver(entries=>entries.forEach(e=>{
   if(e.isIntersecting){e.target.querySelectorAll('.count').forEach(count);}
 }),{threshold:.3}).observe(document.querySelector('.stats-band'));
 
-// SUBMIT
-document.getElementById('subBtn').addEventListener('click',function(){
-  this.textContent='✅ Envoyé ! Nous vous recontactons sous 24h.';
-  this.style.background='var(--vert)';
-  this.style.boxShadow='0 6px 25px rgba(122,182,72,.4)';
+// SUBMIT via Formspree
+const form = document.getElementById('contactForm');
+const btn = document.getElementById('subBtn');
+form.addEventListener('submit', async function(e){
+  e.preventDefault();
+  btn.textContent = '⏳ Envoi en cours…';
+  btn.disabled = true;
+  btn.style.opacity = '0.8';
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if(res.ok){
+      btn.textContent = '✅ Message envoyé ! On vous recontacte sous 24h.';
+      btn.style.background = 'var(--vert)';
+      btn.style.boxShadow = '0 6px 25px rgba(122,182,72,.4)';
+      btn.style.opacity = '1';
+      form.reset();
+    } else {
+      btn.textContent = '❌ Erreur — réessayez ou contactez-nous par email.';
+      btn.style.background = '#c0392b';
+      btn.disabled = false;
+      btn.style.opacity = '1';
+    }
+  } catch(err){
+    btn.textContent = '❌ Erreur réseau — réessayez.';
+    btn.style.background = '#c0392b';
+    btn.disabled = false;
+    btn.style.opacity = '1';
+  }
 });
 
 // ══════════════════════════════════════
@@ -666,14 +693,4 @@ document.getElementById('subBtn').addEventListener('click',function(){
 
     // VIGNETTE
     const vg=ctx.createRadialGradient(W/2,H/2,H*.28,W/2,H/2,H*.88);
-    vg.addColorStop(0,'rgba(0,0,0,0)');vg.addColorStop(1,'rgba(0,0,8,.48)');
-    ctx.fillStyle=vg;ctx.fillRect(0,0,W,H);
-  }
-
-  let last2=0;
-  function loop(ts){const dt=(ts-last2)/1e3;last2=ts;T+=dt;draw(T);requestAnimationFrame(loop);}
-  requestAnimationFrame(loop);
-})();
-</script>
-</body>
-</html>
+    vg.addColorStop(0,'rgba(0,0,0,0)');vg.addColorStop(1,'rgba(0,0,8
